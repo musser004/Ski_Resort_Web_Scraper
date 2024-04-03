@@ -10,4 +10,8 @@ NOTE: Application requires environmental variables (not included) in order to ru
 
 # How to use:
 
-Update "WORKING_PATH" and "GLOBAL_PATH" in Whistler.py and captcha_solver.py. Add CapSolver API Key as "API_KEY" environmental variable to properly run captcha_solver.py. Install packages from requirements.txt. Install NordVPN in standard directory, or update the installation directory in vpn.py. Run Whistler.py
+- Update "WORKING_PATH" and "GLOBAL_PATH" in Whistler.py and captcha_solver.py
+- Add CapSolver API Key as "API_KEY" environmental variable to properly run captcha_solver.py
+- Install packages from requirements.txt
+- Install NordVPN in standard directory, or update the installation directory path in vpn.py
+- Run Whistler.py
