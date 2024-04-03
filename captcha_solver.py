@@ -10,6 +10,8 @@ import urllib.request
 import json
 import os
 
+API_KEY = os.environ['API_KEY']
+
 WORKING_PATH = 'C:/Users/armed/Desktop/Full Stack Dev Work/Scott G/12-29-23'
 
 
@@ -55,7 +57,7 @@ class CaptchaSolver:
             with open("captcha.jpg", 'rb') as img_file:
                 img_data = img_file.read()
             body = base64.b64encode(img_data).decode("utf-8")
-            response = ImageToText(api_key="CAP-63233C481A54734246734522DCBB8652").captcha_handler(body=body)
+            response = ImageToText(api_key=API_KEY).captcha_handler(body=body)
 
             # Solution is not case-sensitive, no need to capitalize string
 
